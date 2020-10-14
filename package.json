@@ -8,8 +8,10 @@
     "start": "node server/server.js",
     "serve": "live-server public/",
     "build": "webpack",
+    "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
-    "heroku-postbuild": "webpack --mode=production"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "npm run build:prod"
   },
   "dependencies": {
     "@babel/core": "^7.11.1",
