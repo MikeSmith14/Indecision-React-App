@@ -9,7 +9,7 @@
     "serve": "live-server public/",
     "build": "webpack",
     "dev-server": "webpack-dev-server",
-    "heroku-postbuild": "npm run build:prod"
+    "heroku-postbuild": "webpack --mode=production"
   },
   "dependencies": {
     "@babel/core": "^7.11.1",
